@@ -14,7 +14,7 @@ export default function CategoriesPage() {
       <ul>
         {data?.map((c: Category) => (
           <li className="text-white underline" key={c.id}>
-            <Link className="hover:text-blue-500" href={`/products?category=${c.name}`}>
+            <Link className="hover:text-blue-500" href={`/categories/${c.name}`}>
             {c.name}
             </Link>
           </li>
